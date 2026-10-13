@@ -17,7 +17,6 @@ pl_df = pl.read_csv(
         "category_id": pl.Int32,
         "timestamp": pl.Int64,
     },
-    n_rows=500000  # 只读前 50 万行，先跑通
 )
 
 # 时间戳格式化（Polars 用 with_columns 生成新列）
